@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import '../app.dart';
 
 class LoginView extends StatefulWidget {
-  const LoginView({Key? key}) : super(key: key);
+  const LoginView({super.key});
 
   @override
   _LoginViewState createState() => _LoginViewState();
@@ -13,8 +14,8 @@ class _LoginViewState extends State<LoginView> {
   final TextEditingController _passwordController = TextEditingController();
 
   void _login() {
-    const hardcodedEmail = 'Admin';
-    const hardcodedPassword = 'Admin';
+    const hardcodedEmail = 'admin';
+    const hardcodedPassword = 'admin';
 
     if (_emailController.text == hardcodedEmail &&
         _passwordController.text == hardcodedPassword) {
@@ -100,7 +101,8 @@ class _LoginViewState extends State<LoginView> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.account_circle), // Replace with your icons
+                  icon: const Icon(
+                      Icons.account_circle), // Replace with your icons
                 ),
               ],
             ),
