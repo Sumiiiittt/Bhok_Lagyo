@@ -1,9 +1,11 @@
+import 'package:bhok_lagyo/core/app_theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'views/splash_view.dart';
-import 'views/onboarding_view.dart';
-import 'views/login_view.dart';
-import 'views/signup_view.dart';
+
 import 'views/dashboard_screen.dart';
+import 'views/login_view.dart';
+import 'views/onboarding_view.dart';
+import 'views/signup_view.dart';
+import 'views/splash_view.dart';
 
 class AppRoutes {
   static const String splash = '/';
@@ -14,14 +16,14 @@ class AppRoutes {
 }
 
 class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Bhok Lagyo',
-      theme: ThemeData(primarySwatch: Colors.orange),
+      theme: getApplicationTheme(),
       initialRoute: AppRoutes.splash,
       onGenerateRoute: (settings) {
         switch (settings.name) {
