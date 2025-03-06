@@ -1,0 +1,2 @@
+C:/Users/ACER/Desktop/foodhub 3 (2)/foodhub 3/foodhub/client/android/app/.cxx/Debug/3ey5y3s6/x86/CMakeFiles/edit_cache.dir
+C:/Users/ACER/Desktop/foodhub 3 (2)/foodhub 3/foodhub/client/android/app/.cxx/Debug/3ey5y3s6/x86/CMakeFiles/rebuild_cache.dir
